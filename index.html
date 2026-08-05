@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スクショ (Sukusho) - Visual Debugging & Academic Hub</title>
+    
+    <!-- Framework & Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Custom Design System -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-unsia sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-camera-fill text-accent-yellow fs-4"></i>
+                <span class="fw-bold">スクショ</span>
+                <span class="fs-6 text-muted ms-1 d-none d-md-inline">Sukusho</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="bi bi-list fs-2 text-unsia-blue"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fitur">Fitur AI</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeri">Galeri Error</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publikasi">Publikasi</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#galeri" class="btn btn-primary-unsia px-4">Jelajahi Platform</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="hero" class="section-padding" style="background-color: var(--bg-light-gray);">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="badge bg-warning-subtle text-warning-emphasis mb-4 px-3 py-2 rounded-pill fw-semi-bold">
+                        <i class="bi bi-stars me-1"></i> Platform Kolaborasi Informatika
+                    </span>
+                    <h1 class="display-3 text-unsia-blue mb-4" style="letter-spacing: -1.5px; line-height: 1.1;">
+                        Ubah <b>Kesalahan Kode</b> Menjadi <span class="text-accent-yellow">Pengetahuan Visual.</span>
+                    </h1>
+                    <p class="lead text-muted mb-5" style="line-height: 1.8; max-width: 600px;">
+                        <i>Sukusho</i> adalah ekosistem edukasi yang mengubah tangkapan layar (<mark>screenshot</mark>) <i>bug</i> atau *error* kode menjadi repositori pengetahuan. Dipadukan dengan publikasi akademik dan analisis <b>Artificial Intelligence</b> untuk mempercepat proses pembelajaran.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#galeri" class="btn btn-primary-unsia btn-lg px-5 py-3">
+                            Lihat Galeri Error <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center d-none d-lg-block">
+                    <div class="position-relative">
+                        <div class="bg-white p-3 rounded-4 shadow-lg" style="transform: rotate(3deg);">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" 
+                                 alt="Ilustrasi Kode Error" class="img-fluid rounded-3" style="max-height: 400px; object-fit: cover;">
+                            <div class="text-start mt-2">
+                                <small class="text-muted font-monospace">Visual Debugging Interface</small>
+                            </div>
+                        </div>
+                        <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-3 shadow-lg d-flex align-items-center" style="transform: rotate(-3deg) translateY(20px);">
+                            <i class="bi bi-robot-fill fs-3 text-unsia-blue me-2"></i>
+                            <div>
+                                <small class="fw-bold text-unsia-blue d-block" style="line-height: 1;">AI Integration</small>
+                                <small class="text-muted" style="font-size: 10px;">Ready to Analyze</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATISTIK REAL-TIME (Tanpa Dummy) -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <h2 id="statSukusho" class="display-3 text-unsia-blue fw-bold mb-0">0</h2>
+                    <p class="text-muted mb-0 text-uppercase" style="letter-spacing: 1px; font-size: 12px;">Sukusho Terselesaikan</p>
+                </div>
+                <div class="col-md-4 border-start border-end">
+                    <h2 id="statPublikasi" class="display-3 text-unsia-blue fw-bold mb-0">0</h2>
+                    <p class="text-muted mb-0 text-uppercase" style="letter-spacing: 1px; font-size: 12px;">Publikasi Akademik</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="display-3 text-unsia-blue fw-bold mb-0">100%</h2>
+                    <p class="text-muted mb-0 text-uppercase" style="letter-spacing: 1px; font-size: 12px;">Akurasi Sistem</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FITUR AI -->
+    <section id="fitur" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 order-lg-2">
+                    <span class="text-accent-yellow fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 14px;">Integrasi Teknologi</span>
+                    <h2 class="text-unsia-blue fw-bold mt-2 mb-4">AI-Assisted Learning</h2>
+                    <p class="text-muted mb-4">Setiap <i>screenshot</i> error yang diunggah dianalisis oleh <i>Asisten AI</i>. Sistem memberikan saran solusi awal secara real-time, dan secara otomatis merangkum publikasi panjang menjadi abstrak yang ringkas.</p>
+                    
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-accent-yellow me-3 mt-1 fs-5"></i>
+                            <div><strong>Auto-Bug Suggester:</strong> <span class="text-muted">Identifikasi cepat penyebab error pada struktur kode.</span></div>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="bi bi-check-circle-fill text-accent-yellow me-3 mt-1 fs-5"></i>
+                            <div><strong>Auto-Summary Publikasi:</strong> <span class="text-muted">Ekstraksi poin utama menjadi satu paragraf otomatis.</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 order-lg-1">
+                    <div class="card-sukusho p-4 p-md-5">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-robot fs-2 text-unsia-blue me-2"></i>
+                            <h4 class="mb-0 text-unsia-blue">Sukusho AI Console</h4>
+                        </div>
+                        <div class="bg-light p-4 rounded-3 border d-flex align-items-center justify-content-center" style="min-height: 200px;">
+                            <div class="text-center">
+                                <i class="bi bi-cpu fs-1 text-warning"></i>
+                                <p class="text-muted mt-2 mb-0">Sistem AI beroperasi secara *backend* untuk memproses analisis gambar dan teks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI SUKUSHO -->
+    <section id="galeri" class="section-padding" style="background-color: var(--bg-light-gray);">
+        <div class="container">
+            <div class="row mb-5 align-items-end">
+                <div class="col-lg-8">
+                    <h2 class="text-unsia-blue fw-bold mb-2">Repositori Error</h2>
+                    <p class="text-muted">Database masalah teknis yang telah terkumpul dan divalidasi oleh sistem.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input type="text" class="form-control border-start-0 py-2" placeholder="Cari error...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-sukusho p-4 shadow-sm">
+                <div class="table-responsive">
+                    <table class="table table-modern align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 50px;">ID</th>
+                                <th scope="col">Judul Error</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Status</th>
+                                <th scope="col" class="text-end">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sukushoTableBody">
+                            <tr>
+                                <td colspan="5" class="text-center text-muted py-5">
+                                    <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
+                                    Memuat data dari database...
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MULTIMEDIA & PUBLIKASI -->
+    <section id="publikasi" class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-unsia-blue fw-bold">Belajar Multi-Format</h2>
+                <p class="text-muted w-50 mx-auto">Ekosistem pembelajaran yang mendukung materi visual, audio, dan karya tulis ilmiah.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card-sukusho p-4 h-100">
+                        <h5 class="text-unsia-blue mb-3"><i class="bi bi-collection-play me-2"></i>Media Edukasi</h5>
+                        
+                        <small class="text-muted fw-bold text-uppercase" style="font-size: 11px; letter-spacing: 1px;">Video Demo</small>
+                        <video controls class="w-100 rounded-3 mt-2 mb-4" style="max-height: 220px; object-fit: cover;">
+                            <source src="assets/video/demo-debugging.mp4" type="video/mp4">
+                            Browser tidak mendukung tag video.
+                        </video>
+                        
+                        <small class="text-muted fw-bold text-uppercase" style="font-size: 11px; letter-spacing: 1px;">Podcast Teknologi</small>
+                        <audio controls class="w-100 mt-2">
+                            <source src="assets/audio/podcast-error.mp3" type="audio/mpeg">
+                            Browser tidak mendukung tag audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card-sukusho p-4 h-100 d-flex flex-column">
+                        <h5 class="text-unsia-blue mb-3"><i class="bi bi-journal-text me-2"></i>Publikasi Akademik</h5>
+                        
+                        <blockquote class="blockquote border-start border-3 border-warning ps-3 mb-4">
+                            <p class="mb-0 small text-muted">"Implementasi <i>Clean Code</i> pada Arsitektur Mikroservis menjadi fondasi utama dalam skalabilitas sistem modern."</p>
+                            <footer class="blockquote-footer mt-1"><cite title="Source Title">Rama Eka Yudha - Esai Teknologi</cite></footer>
+                        </blockquote>
+
+                        <p class="small text-muted">Setiap karya tulis yang dipublikasikan melewati proses <mark>tinjauan</mark> integritas akademis untuk memastikan kualitas referensi.</p>
+                        
+                        <ol class="small text-muted mt-3 mb-4">
+                            <li>Algoritma & Struktur Data</li>
+                            <li>Desain Antarmuka Pengguna (UI/UX)</li>
+                            <li>Keamanan Jaringan Siber</li>
+                        </ol>
+
+                        <a href="#" class="btn btn-accent-yellow btn-sm w-100 mt-auto">Jelajahi Publikasi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-white pt-5 pb-4" style="background-color: var(--unsia-blue);">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-camera-fill text-accent-yellow me-2"></i>スクショ (Sukusho)</h4>
+                    <p class="text-white-50" style="max-width: 350px; font-size: 14px;">
+                        Platform edukasi kolaboratif berbasis visual dan kecerdasan buatan untuk ekosistem pembelajaran informatika.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 1px;">Navigasi</h6>
+                    <ul class="list-unstyled text-white-50" style="font-size: 14px;">
+                        <li class="mb-2"><a href="#hero" class="text-white-50 text-decoration-none">Beranda</a></li>
+                        <li class="mb-2"><a href="#galeri" class="text-white-50 text-decoration-none">Galeri Sukusho</a></li>
+                        <li class="mb-2"><a href="#publikasi" class="text-white-50 text-decoration-none">Publikasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3 text-uppercase" style="letter-spacing: 1px;">Kontak</h6>
+                    <p class="text-white-50 mb-1" style="font-size: 14px;"><i class="bi bi-geo-alt me-2"></i> Jakarta Selatan, Indonesia</p>
+                    <p class="text-white-50 mb-1" style="font-size: 14px;"><i class="bi bi-envelope me-2"></i> support@sukusho.id</p>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white-50" style="font-size: 13px;">
+                &copy; 2026 スクショ (Sukusho). All Rights Reserved. Designed with precision.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

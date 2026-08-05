@@ -1,0 +1,123 @@
+/* css/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --unsia-blue: #003B73;
+    --unsia-blue-light: #024b8a;
+    --unsia-yellow: #FFC300;
+    --bg-light-gray: #F4F6F9;
+    --text-dark: #2D3748;
+    --text-muted: #718096;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+html { scroll-behavior: smooth; }
+
+.section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Navbar */
+.navbar-unsia {
+    background-color: var(--white);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+.navbar-unsia .navbar-brand {
+    font-weight: 800;
+    color: var(--unsia-blue);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-unsia .nav-link {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.navbar-unsia .nav-link:hover,
+.navbar-unsia .nav-link.active {
+    color: var(--unsia-blue);
+}
+
+/* Buttons */
+.btn-primary-unsia {
+    background-color: var(--unsia-blue);
+    color: var(--white);
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-primary-unsia:hover {
+    background-color: var(--unsia-blue-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px -3px rgba(0, 59, 115, 0.3);
+    color: var(--white);
+}
+
+.btn-accent-yellow {
+    background-color: var(--unsia-yellow);
+    color: var(--text-dark);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.btn-accent-yellow:hover {
+    background-color: #e6b400;
+    color: var(--text-dark);
+}
+
+/* Cards */
+.card-sukusho {
+    background: var(--white);
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+}
+.card-sukusho:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px -10px rgba(0, 59, 115, 0.15) !important;
+    border-color: var(--unsia-yellow);
+}
+
+/* Tables */
+.table-modern {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.table-modern thead th {
+    background-color: var(--unsia-blue);
+    color: var(--white);
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    border: none;
+}
+.table-modern tbody td {
+    padding: 16px;
+    border-bottom: 1px solid #E2E8F0;
+    vertical-align: middle;
+}
+.table-modern tbody tr:hover {
+    background-color: var(--bg-light-gray);
+}
+
+/* Typography Helpers */
+.text-unsia-blue { color: var(--unsia-blue) !important; }
+.text-accent-yellow { color: var(--unsia-yellow) !important; }
